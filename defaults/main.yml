@@ -1,0 +1,9 @@
+---
+odbc_version: "17"
+
+mssql_repo_name: mssql-release
+mssql_repo_description: Microsoft mssql odbc driver repository
+mssql_repo_baseurl: https://packages.microsoft.com/rhel/7/prod/
+mssql_repo_enabled: yes
+mssql_repo_gpgcheck: yes
+mssql_repo_gpg: https://packages.microsoft.com/keys/microsoft.asc
