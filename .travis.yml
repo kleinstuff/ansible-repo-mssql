@@ -19,7 +19,7 @@ script:
   - ${PWD}/tests/test.sh
 
   # Ensure Repository is installed.
-  - 'docker exec --tty ${container_id} env TERM=xterm grep webtatic /etc/yum.repos.d/mssql.repo'
+  - 'docker exec --tty ${container_id} env TERM=xterm grep microsoft /etc/yum.repos.d/mssql.repo'
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
