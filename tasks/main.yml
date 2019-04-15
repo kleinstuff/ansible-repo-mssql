@@ -1,6 +1,6 @@
 ---
 - name: Setup repository
-  yum_repoisitory:
+  yum_repository:
     name: "{{ mssql_repo_name }}"
     description: "{{ mssql_repo_description }}"
     baseurl: "{{ mssql_repo_baseurl }}"
