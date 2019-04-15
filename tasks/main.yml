@@ -1,21 +1,13 @@
 ---
 - name: Setup repository
   yum_repoisitory:
-    name: {{ mssql_repo_name }}
-    description: {{ mssql_repo_description }}
-    baseurl: {{ mssql_repo_baseurl }}
-    enabled: {{ mssql_repo_enabled }}
-    gpg_check: {{ mssql_repo_gpgcheck }}
+    name: "{{ mssql_repo_name }}"
+    description: "{{ mssql_repo_description }}"
+    baseurl: "{{ mssql_repo_baseurl }}"
+    enabled: "{{ mssql_repo_enabled }}"
+    gpg_check: "{{ mssql_repo_gpgcheck }}"
 
 - name: Import GPG key.
   rpm_key:
     key: "{{ mssql_repo_gpg }}"
     state: present
-
-
-    name: mssql-release
-    description: Microsoft mssql odbc driver repository
-    baseurl: https://packages.microsoft.com/rhel/7/prod/
-    enabled: yes
-    gpg_check: yes
-
