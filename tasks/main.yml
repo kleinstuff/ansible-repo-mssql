@@ -5,7 +5,7 @@
     description: "{{ mssql_repo_description }}"
     baseurl: "{{ mssql_repo_baseurl }}"
     enabled: "{{ mssql_repo_enabled }}"
-    gpg_check: "{{ mssql_repo_gpgcheck }}"
+    gpgcheck: "{{ mssql_repo_gpgcheck }}"
 
 - name: Import GPG key.
   rpm_key:
